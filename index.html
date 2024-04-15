@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="left">
+                <div class="score">Score: <span class="score-value">100</span> 💎</div>
+                <button class="mine" onclick="incrementGem()">Mine Gems</button>
+                <div class="gpc-block">Gems per click: <span class="gems-per-click">1</span></div>
+            </div>
+
+            <div class="right">
+                <div class="upgrade" onclick="buyUpgrade()">
+                    <div class="upgrade-section-img">👷</div>
+                    <div class="upgrade-section-info">
+                        <div class="upgrade-section-info-title">Worker</div>
+                        <div class="upgrade-section-info-description">
+                            <div class="upgrade-section-info-description-text">Each worker mines additional gem per click</div>
+                            <div class="upgrade-section-info-description-price">Price: <span class="upgrade-price-value">10</span> 💎</div>
+                        </div>
+                    </div>
+                    <div class="upgrade-section-lvl"><span class="upgrade-lvl-value">0</span> lvl</div>
+                    <span class="upgrade-tooltip">Buy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

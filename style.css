@@ -1,0 +1,98 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #282c34;
+    color: #a8afbc;
+    font-family: monospace;
+    user-select: none;
+}
+
+.main {
+    display: flex;
+    gap: 80px;
+}
+
+.left {
+    text-align: center;
+}
+
+.score {
+    font-size: 32px;
+    color: #a8afbc;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.mine {
+    border: 0;
+    background-color: #21252b;
+    color: #a8afbc;
+    font-size: 32px;
+    font-family: monospace;
+    padding: 12px 24px 16px;
+}
+
+.mine:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.mine:active {
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+.gpc-block {
+    margin-top: 12px;
+}
+
+.upgrade {
+    display: flex;
+    align-items: center;
+    border: 1px dotted #a8afbc;
+    cursor: pointer;
+    position: relative;
+}
+
+.upgrade > div {
+    padding: 8px 8px;
+}
+
+.upgrade-section-img {
+    font-size: 32px;
+}
+
+.upgrade-section-info-title {
+    color: #c274d7;
+    font-size: 18px;
+}
+
+.upgrade-section-lvl {
+    color: #d5ba79;
+    font-size: 18px;
+}
+
+.buy-upgrade {
+    border: 0;
+    background-color: #21252b;
+    color: #a8afbc;
+    font-size: 16px;
+    font-family: monospace;
+    padding: 4px 6px 6px;
+}
+
+.upgrade-tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: calc(50% - 14px);
+    right: -60px;
+    font-size: 24px;
+}
+
+.upgrade:hover .upgrade-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
